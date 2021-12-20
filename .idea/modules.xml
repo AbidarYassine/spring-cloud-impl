@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/commande-service/commande-service.iml" filepath="$PROJECT_DIR$/commande-service/commande-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/auth-service/demo-security.iml" filepath="$PROJECT_DIR$/auth-service/demo-security.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateway-service/gateway-service.iml" filepath="$PROJECT_DIR$/gateway-service/gateway-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/output.iml" filepath="$PROJECT_DIR$/.idea/output.iml" />
+      <module fileurl="file://$PROJECT_DIR$/paiement-service/paiement-service.iml" filepath="$PROJECT_DIR$/paiement-service/paiement-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-registry/service-registry.iml" filepath="$PROJECT_DIR$/service-registry/service-registry.iml" />
+    </modules>
+  </component>
+</project>

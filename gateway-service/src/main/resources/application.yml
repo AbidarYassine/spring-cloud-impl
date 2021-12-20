@@ -1,0 +1,39 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: GATEWAY-SERVICE
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: openapi
+          uri: http://localhost:${server.port}
+          predicates:
+            - Path=/v3/api-docs/**
+          filters:
+            - RewritePath=/v3/api-docs/(?<path>.*), /${path}/v3/api-docs
+springdoc:
+  swagger-ui:
+    use-root-path: true
+    urls:
+      - name: commande
+        url: /api/v1/commande/v3/api-docs
+      - name: paiement
+        url: /api/v1/paiement/v3/api-docs
+
+
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    hostname: localhost
+
+jwt:
+  secret: BvPHGM8C0ia4uOuxxqPD5DTbWC9F9TWvPStp3pb7ARo0oK2mJ3pd3YG4lxA9i8bj6OTbadwezxgeEByY
